@@ -14,10 +14,10 @@ body{
 
 .mario{	
 	position: absolute;
-	top: 72px;
-	left: 52px;
-	width: 175px;
-	height: 175px;
+	top: 50px;
+	left: 134px;
+	width: 126px;
+	height: 126px;
 	background-size: 100% 100%;
 	background-image: url('./mario.png');
 	box-shadow: 0px 15px 15px #00000029;
@@ -28,10 +28,10 @@ body{
 
 .einstein{
 	position: absolute;
-	top: 327px;
-	left: 52px;
-	width: 175px;
-	height: 175px;
+	top: 248px;
+	left: 134px;
+	width: 126px;
+	height: 126px;
 	background-size: 100% 100%;
 	background-image: url('albert.png');
 	box-shadow: 0px 15px 15px #00000029;
@@ -39,44 +39,57 @@ body{
 	border-radius: 50px;
 	opacity: 1;
 }
-h1{
-	position: absolute;
-	width: 130px;
-	height: 40px;
-	text-align: left;
-	font: normal normal bold 26px SF Pro;
-	letter-spacing: 0px;
-	color: #27A7E7;
-	opacity: 1;
-}
-h2{
-	position: absolute;
-	width: 184px;
-	height: 40px;
-	text-align: left;
-	font: normal normal 300 26px SF Pro;
-	letter-spacing: 0px;
-	color: #27A7E7;
-	opacity: 1;
-}
 .mario-text-h1{
 	position: absolute;
-	left: 103px;
-	top: 244px;
+	color: #27A7E7;
+	display: flex;
+	width: 69px;
+	height: 28px;
+	flex-direction: column;
+	text-align: center;
+	font-size: 20px;
+	font-family: SF Pro;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	top: 176px;
+	left: 163px;
 }
 .mario-text-h2{
+	color: #27A7E7;
 	position: absolute;
-	left: 87px;
-	top: 265px;
+	text-align: center;
+	font-size: 20px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	top: 196px;
+	left: 152px;
 	
 }
 .einstein-text-h1{
+	color: #27A7E7;
 	position: absolute;
-	left: 87px;
-	top: 500px;
+	left: 108px;
+	top: 384px;
+	flex-direction: column;
+	text-align: center;
+	font-size: 20px;
+	font-family: SF Pro;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
 }
 .einstein-text-h2{
+	color: #27A7E7;
 	position: absolute;
-	left: 87px;
-	top: 550px;
+	left: 128px;
+	top: 408px;
+	text-align: center;
+	font-size: 20px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
