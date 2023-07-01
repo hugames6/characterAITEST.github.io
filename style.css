@@ -1,23 +1,24 @@
+body{
+	margin: 0;
+}
 .characters{
-
 	top: 0px;
 	left: 0px;
-	width: 1080px;
-	height: 1920px;
-/* UI Properties */
+	width: 394px;
+	height: 496px;
 	background: #F5F5F5 0% 0% no-repeat padding-box;
 	opacity: 1;
 	position: relative;
+	text-align: center;
 }
 
 .mario{	
 	position: absolute;
-	top: 383px;
-	left: 344px;
-	width: 392px;
-	height: 392px;
-	/* UI Properties */
-	background-size: contain;
+	top: 72px;
+	left: 52px;
+	width: 175px;
+	height: 175px;
+	background-size: 100% 100%;
 	background-image: url('./mario.png');
 	box-shadow: 0px 15px 15px #00000029;
 	border: 3px solid #27A7E7;
@@ -27,14 +28,55 @@
 
 .einstein{
 	position: absolute;
-	top: 1024px;
-	left: 344px;
-	width: 392px;
-	height: 392px;
-	background-size: contain;
+	top: 327px;
+	left: 52px;
+	width: 175px;
+	height: 175px;
+	background-size: 100% 100%;
 	background-image: url('albert.png');
 	box-shadow: 0px 15px 15px #00000029;
 	border: 3px solid #27A7E7;
 	border-radius: 50px;
 	opacity: 1;
+}
+h1{
+	position: absolute;
+	width: 130px;
+	height: 40px;
+	text-align: left;
+	font: normal normal bold 26px SF Pro;
+	letter-spacing: 0px;
+	color: #27A7E7;
+	opacity: 1;
+}
+h2{
+	position: absolute;
+	width: 184px;
+	height: 40px;
+	text-align: left;
+	font: normal normal 300 26px SF Pro;
+	letter-spacing: 0px;
+	color: #27A7E7;
+	opacity: 1;
+}
+.mario-text-h1{
+	position: absolute;
+	left: 103px;
+	top: 244px;
+}
+.mario-text-h2{
+	position: absolute;
+	left: 87px;
+	top: 265px;
+	
+}
+.einstein-text-h1{
+	position: absolute;
+	left: 87px;
+	top: 500px;
+}
+.einstein-text-h2{
+	position: absolute;
+	left: 87px;
+	top: 550px;
 }
