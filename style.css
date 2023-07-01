@@ -13,7 +13,7 @@ body{
 }
 
 .mario{	
-	position: absolute;
+	position: fixed;
 	top: 50px;
 	left: 134px;
 	width: 126px;
@@ -27,7 +27,7 @@ body{
 }
 
 .einstein{
-	position: absolute;
+	position: fixed;
 	top: 248px;
 	left: 134px;
 	width: 126px;
