@@ -27,18 +27,15 @@
 		let mario = document.getElementById('mario');
 		let einstein = document.getElementById('einstein');
 		let item = '';
-		tg.expand();
 
 		mario.addEventListener('click', function(){
 			item = 'mario';
-			tg.sendData(item);
-			tg.close();
 		});
 		einstein.addEventListener('click', function(){
 			item = 'einstein';
-			tg.sendData(item);
-			tg.close();
 		});
+		tg.sendData(item);
+		tg.close();
 	</script>
 </body>
 </html>
