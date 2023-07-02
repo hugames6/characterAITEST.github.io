@@ -22,23 +22,6 @@
 		</div>
 	</div>
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
-	<script type="text/javascript">
-		let tg = window.Telegram.WebApp;
-		let mario = document.getElementById('mario');
-		let einstein = document.getElementById('einstein');
-		let item = '';
-
-		tg.expand()
-
-		mario.addEventListener('click', function(){
-			item = 'mario';
-			tg.close();
-		});
-		einstein.addEventListener('click', function(){
-			item = 'einstein';
-			tg.close();
-		});
-
-	</script>
+	<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
