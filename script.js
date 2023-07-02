@@ -9,6 +9,6 @@ mario.addEventListener('click', function(){
 });
 einstein.addEventListener('click', function(){
     info = 'einstein';
-})
+});
 tg.sendData(info);
 tg.close();
