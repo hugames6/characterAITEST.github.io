@@ -30,16 +30,16 @@
 
 		tg.expand();
 
-		mario.addEventListener('click', function(){
-			item = 'mario';
-			tg.sendData(item);
-			tg.close()
-		});
 		einstein.addEventListener('click', function(){
 			item = 'einstein';
-			tg.sendData(item);
-			tg.close()
 		});
+		mario.addEventListener('click', function(){
+			item = 'mario';
+		});
+
+		tg.sendData(item);
+
+		tg.close();
 	</script>
 </body>
 </html>
