@@ -10,12 +10,12 @@
 	<div class="container">
 		<div class="characters">
 			<!-- <div class="mario"> -->
-				<button class="mario"></button>
+				<button class="mario" id='mario'></button>
 				<h1 class="mario-text-h1">Марио</h1>
 				<h2 class="mario-text-h2">Персонаж</h2>
 			<!-- </div>	-->
 			<!-- </div class="einstein"> -->
-				<button class="einstein" alt='albert'></button>
+				<button class="einstein" id='albert'></button>
 				<h1 class="einstein-text-h1">Альберт Эйнштейн</h1>
 				<h2 class="einstein-text-h2">Физик-теоретик</h2>
 			<!-- </div> -->
@@ -26,12 +26,22 @@
 		let tg = window.Telegram.WebApp;
 		let mario = document.getElementById('mario');
 		let einstein = document.getElementById('einstein');
+		let item = '';
 
 		tg.expand();
 
-		mario.addEventListener('click', () => {
+		mario.addEventListener('click', function(){
+			item = 'mario';
 			tg.close();
-		})
+		});
+		einstein.addEventListener('click', function(){
+			item = 'einstein';
+			tg.close();
+		});
+
+		Telegram.WebApp.onEvent('mainButtonClicked', function(){
+			tg.sendData(item);
+		});
 	</script>
 </body>
 </html>
