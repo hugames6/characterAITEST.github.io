@@ -32,14 +32,13 @@
 
 		mario.addEventListener('click', function(){
 			item = 'mario';
+			tg.sendData(item);
+			tg.close()
 		});
 		einstein.addEventListener('click', function(){
 			item = 'einstein';
-		});
-
-		Telegram.WebApp.onEvent('mainButtonClicked', function(){
 			tg.sendData(item);
-			tg.close();
+			tg.close()
 		});
 	</script>
 </body>
